@@ -6,13 +6,45 @@
   body {
     @apply font-primary bg-primary text-white leading-loose;
   }
-  h1 {
-    @apply text-[48px] lg:text-[60px] leading-[1.1] font-semibold;
+  .h1 {
+    @apply text-[38px] lg:text-[50px] leading-[1.1] font-semibold;
   }
-  h2 {
-    @apply text-[36px] lg:text-[48px] leading-[1.1] font-semibold;
+  .h2 {
+    @apply text-[26px] lg:text-[38px] leading-[1.1] font-semibold;
   }
-  h3 {
-    @apply text-[20px] lg:text-[24px] leading-[1.1] font-semibold;
+  .h3 {
+    @apply text-[12px] lg:text-[24px] leading-[1.1] font-semibold;
+  }
+  .text-outline {
+    -webkit-text-stroke: 1px #ffff;
+  }
+  .text-outline-hover {
+    -webkit-text-stroke: 1px #00ff99;
+  }
+}
+
+body {
+  --sb-track-color: #1c1c22;
+  --sb-thumb-color: #00ff99;
+  --sb-size: 7px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 3px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
   }
 }

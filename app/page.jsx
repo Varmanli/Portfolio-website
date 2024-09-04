@@ -2,17 +2,18 @@ import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 import Social from "../components/Social";
 import Photo from "../components/Photo";
+import Stats from "../components/Stats";
 
 function home() {
   return (
-    <section className="h-full">
+    <section className="h-full lg:mx-[100px]">
       <div className="container mx-auto h-full">
-        <div className=" flex flex-col lg:flex-row items-center justify-between lg:pt-8 lg:pb-24">
+        <div className=" flex flex-col lg:flex-row items-center justify-between lg:pt-2 lg:pb-10">
           <div className="text-center lg:text-left order-2 lg:order-none ">
-            <span className="text-xl">Front-end Developer</span>
+            <span className="text-md lg:text-lg ">Front-end Developer</span>
             <h1 className="h1 mb-6">
-              Heloo I'm <br />{" "}
-              <span className="text-accent">Amihosein Varmanli</span>
+              Hello I am <br />
+              <span className="text-accent">Amirhosein Varmanli</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
               I excel at carfting elegant digital experiences and I amproficient
@@ -40,6 +41,7 @@ function home() {
           </div>
         </div>
       </div>
+      <Stats />
     </section>
   );
 }
