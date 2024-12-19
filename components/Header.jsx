@@ -1,27 +1,32 @@
 import Link from "next/link";
-
-//component
 import { Button } from "./ui/button";
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
 
 function Header() {
   return (
-    <header className="py-8 xl:py-8 text-white lg:mx-[100px] ">
+    <header className="py-4 text-white top-0 w-full">
       <div className="container mx-auto flex justify-between items-center flex-row-reverse">
-        {/* logo */}
-        <Link href={"/"}>
-          <h1 className="text-3xl font-semibold ">
-            Amir <span className="text-accent">.</span>
+        {/* لوگو */}
+        <Link href="/">
+          <h1
+            className="text-3xl font-bold tracking-tight cursor-pointer text-white hover:text-accent transition-all font-primary "
+          >
+            Amir<span className="text-accent">.V</span>
           </h1>
         </Link>
-        {/* desktop navbar */}
-        <div className="hidden lg:flex items-center gap-6">
+
+        {/* منوی دسکتاپ */}
+        <div className="hidden lg:flex items-center gap-8">
           <Link href="/contact">
-            <Button>استخدام من</Button>
+            <Button className="bg-accent hover:bg-accent-dark text-black px-5 py-2 rounded-lg transition-all duration-300">
+              استخدام من
+            </Button>
           </Link>
           <Nav />
         </div>
+
+        {/* منوی موبایل */}
         <div className="lg:hidden">
           <MobileNav />
         </div>

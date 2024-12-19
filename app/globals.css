@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap");
 @layer base {
   body {
     @apply font-primary bg-primary text-white leading-loose;
@@ -50,6 +50,9 @@ body::-webkit-scrollbar-thumb {
 }
 :root {
   --f: "YekanBakh", Arial, sans-serif;
+}
+.font-jetbrains {
+  font-family: "JetBrains Mono", monospace;
 }
 
 /* تعریف فونت‌های YekanBakh */

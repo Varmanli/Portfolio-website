@@ -6,7 +6,7 @@ import Stats from "../components/Stats";
 
 function Home() {
   return (
-    <section className="h-full lg:mx-[100px]">
+    <section className="h-full lg:mx-[100px] mt-10">
       <div className="container mx-auto h-full">
         <div className="flex flex-col lg:flex-row items-center justify-between lg:pt-2 lg:pb-10">
           {/* بخش متن */}
