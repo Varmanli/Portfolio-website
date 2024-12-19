@@ -13,42 +13,121 @@ import {
 } from "../../components/ui/tooltip";
 import { motion } from "framer-motion";
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+import { FaReact, FaNodeJs, FaHtml5, FaCss3, FaJs } from "react-icons/fa";
+import {
+  SiTailwindcss,
+  SiExpress,
+  SiMongodb,
+  SiNextdotjs,
+} from "react-icons/si";
 import WorkSliderBtns from "../../components/WorkSliderBtns";
 
 const projects = [
   {
     num: "۰۱",
-    category: "فرانت‌اند",
+    category: "فول‌استک",
     title: "موزیک پیچ",
-    Description: "سایت استریم و پخش آنلاین موسیقی",
-    stack: [{ name: "ری‌اکت" }, { name: "تیلویند" }, { name: "جاوااسکریپت" }],
-    image: "/assets/work/Musicpich.png",
-    live: "https://musicpich.vercel.app/",
+    description:
+      "سایت استریم و پخش آنلاین موسیقی با قابلیت مدیریت بک‌اند و دیتابیس",
+    stack: [
+      { icon: <FaReact />, name: "ری‌اکت" },
+      { icon: <SiTailwindcss />, name: "تیلویند" },
+      { icon: <FaJs />, name: "جاوااسکریپت" },
+      { icon: <FaNodeJs />, name: "نود جی‌اس" },
+      { icon: <SiExpress />, name: "اکسپرس" },
+      { icon: <SiMongodb />, name: "مونگو دی‌بی" },
+    ],
+    image: "/assets/work/musicpich.png",
+    live: "https://music.varmanli.ir",
     github: "https://github.com/Varmanli/Musicpich",
   },
   {
     num: "۰۲",
-    category: "فرانت‌اند",
-    title: "فروشگاه آنلاین",
-    Description: "وبسایت فروشگاهی با قابلیت سبد خرید",
-    stack: [{ name: "ری‌اکت" }, { name: "تیلویند" }, { name: "جاوااسکریپت" }],
-    image: "/assets/work/ReactShop.png",
-    live: "https://react-shop.liara.run/",
-    github: "https://github.com/Varmanli/React-Shop",
+    category: "فول‌استک",
+    title: "پروژه بلاگ",
+    description:
+      "وبسایت مدیریت و نمایش بلاگ با قابلیت دسته‌بندی، نظرات کاربران و پنل مدیریت",
+    stack: [
+      { icon: <SiNextdotjs />, name: "نکست‌جی‌اس" },
+      { icon: <FaReact />, name: "ری‌اکت" },
+      { icon: <SiTailwindcss />, name: "تیلویند" },
+      { icon: <FaNodeJs />, name: "نود جی‌اس" },
+      { icon: <SiExpress />, name: "اکسپرس" },
+      { icon: <SiMongodb />, name: "مونگو دی‌بی" },
+    ],
+    image: "/assets/work/blog.png",
+    live: "https://blog.varmanli.ir",
+    github: "https://github.com/Varmanli/Blog-Project",
   },
   {
     num: "۰۳",
     category: "فرانت‌اند",
-    title: "لیست فیلم",
-    Description: "سایت جستجوی فیلم و سریال با امکان افزودن به لیست تماشا",
+    title: "فروشگاه آنلاین",
+    description: "وبسایت فروشگاهی با قابلیت سبد خرید",
     stack: [
-      { name: "نکست‌جی‌اس" },
-      { name: "تیلویند" },
-      { name: "تایپ‌اسکریپت" },
+      { icon: <FaReact />, name: "ری‌اکت" },
+      { icon: <SiTailwindcss />, name: "تیلویند" },
+      { icon: <FaJs />, name: "جاوااسکریپت" },
+    ],
+    image: "/assets/work/ReactShop.png",
+    live: "https://react-shop-murex-zeta.vercel.app/",
+    github: "https://github.com/Varmanli/React-Shop",
+  },
+  {
+    num: "۰۴",
+    category: "فرانت‌اند",
+    title: "لیست فیلم",
+    description: "سایت جستجوی فیلم و سریال با امکان افزودن به لیست تماشا",
+    stack: [
+      { icon: <SiNextdotjs />, name: "نکست‌جی‌اس" },
+      { icon: <SiTailwindcss />, name: "تیلویند" },
+      { icon: <FaJs />, name: "تایپ‌اسکریپت" },
     ],
     image: "/assets/work/watchlist.png",
     live: "https://movie-watchlist-eosin.vercel.app/",
     github: "https://github.com/Varmanli/Movie-Watchlist",
+  },
+  {
+    num: "۰۵",
+    category: "فرانت‌اند",
+    title: "اپلیکیشن هواشناسی",
+    description: "برنامه‌ای برای نمایش وضعیت آب و هوا با استفاده از API",
+    stack: [
+      { icon: <FaReact />, name: "ری‌اکت" },
+      { icon: <FaCss3 />, name: "CSS" },
+      { icon: <FaJs />, name: "جاوااسکریپت" },
+    ],
+    image: "/assets/work/weather.png",
+    live: "https://movie-watchlist-eosin.vercel.app/",
+    github: "https://github.com/Varmanli/Weather-app",
+  },
+  {
+    num: "۰۶",
+    category: "فرانت‌اند",
+    title: "لندینگ پیج",
+    description: "لندینگ پیج مناسبتی برای جشن یلدا",
+    stack: [
+      { icon: <FaHtml5 />, name: "HTML" },
+      { icon: <FaCss3 />, name: "CSS" },
+      { icon: <FaJs />, name: "جاوااسکریپت" },
+    ],
+    image: "/assets/work/yalda.png",
+    live: "https://varmanli.github.io/landing-page-yalda/",
+    github: "https://github.com/Varmanli/landing-page-yalda",
+  },
+  {
+    num: "۰۷",
+    category: "فرانت‌اند",
+    title: "داشبورد مدیریت",
+    description: "پنل مدیریت با قابلیت‌های متنوع برای نظارت و کنترل",
+    stack: [
+      { icon: <FaReact />, name: "ری‌اکت" },
+      { icon: <SiTailwindcss />, name: "تیلویند" },
+      { icon: <FaJs />, name: "جاوااسکریپت" },
+    ],
+    image: "/assets/work/dashboard.png",
+    live: "https://dashbord-weld.vercel.app/",
+    github: "https://github.com/Varmanli/Dashbord",
   },
 ];
 
@@ -86,17 +165,21 @@ function Work() {
                 transition={{ duration: 0.7 }}
                 className="text-white/70"
               >
-                {project.Description}
+                {project.description}
               </motion.p>
               <ul className="flex gap-4 justify-center lg:justify-start">
-                {project.stack.map((item, index) => {
-                  return (
-                    <li key={index} className="text-xl text-accent">
-                      {item.name}
-                      {index !== project.stack.length - 1 && ","}
-                    </li>
-                  );
-                })}
+                {project.stack.map((item, index) => (
+                  <TooltipProvider key={index} delayDuration={100}>
+                    <Tooltip>
+                      <TooltipTrigger className="text-accent text-4xl hover:scale-110 transition-transform duration-300">
+                        {item.icon}
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p className="text-sm font-medium">{item.name}</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+                ))}
               </ul>
               <div className="border border-white/20 my-4"></div>
               <div className="flex items-center justify-center lg:justify-start gap-4">

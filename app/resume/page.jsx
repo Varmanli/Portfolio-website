@@ -9,8 +9,21 @@ import {
   TabsTrigger,
 } from "../../components/ui/tabs";
 
-import { FaHtml5, FaCss3, FaJs, FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import {
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaReact,
+  FaNodeJs,
+  FaWordpress,
+} from "react-icons/fa";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiExpress,
+  SiMongodb,
+  SiGit,
+} from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 import {
   TooltipProvider,
@@ -22,7 +35,7 @@ import {
 const about = {
   title: "درباره من",
   description:
-    "سلام! من امیرحسین ورمانلی هستم. توسعه‌دهنده فرانت‌اند که با تکنولوژی‌های مختلف کار می‌کنم تا تجربه‌ای عالی برای کاربران خلق کنم",
+    "سلام! من امیرحسین ورمانلی هستم، برنامه‌نویس وب با تمرکز بر طراحی و توسعه پروژه‌های خلاقانه و کاربرپسند. هدف من خلق تجربه‌های دیجیتالی منحصر‌به‌فرد است که نیازهای کاربران را به بهترین شکل ممکن برآورده کند",
   info: [
     {
       field: "نام",
@@ -46,7 +59,8 @@ const about = {
 const education = {
   icon: "/assest/resume/cap.svg",
   title: "تحصیلات من",
-  description: "مسیر یادگیری و تجربه‌هایی که مرا به جایگاه امروزی رسانده‌اند:",
+  description:
+    "مسیر یادگیری و تجربه‌هایی که مرا به جایگاه امروزی رسانده‌اند و همچنان در حال پیشرفت هستم",
   item: [
     {
       institution: "دانشجوی مهندسی کامپیوتر، دانشگاه آزاد کرج",
@@ -54,19 +68,24 @@ const education = {
       duration: "۱۴۰۰ - ۱۴۰۳",
     },
     {
-      institution: "آموزش طراحی حرفه‌ای رابط کاربری با HTML و CSS",
+      institution: "آموزش حرفه‌ای طراحی و توسعه رابط کاربری با HTML و CSS",
       degree: "طراحی رابط کاربری",
       duration: "۱۴۰۰ - ۱۴۰۱",
     },
     {
-      institution: "آموزش اصول برنامه‌نویسی و کدنویسی جاوااسکریپت",
+      institution: "آموزش اصول برنامه‌نویسی جاوااسکریپت و پروژه‌های کاربردی",
       degree: "جاوااسکریپت مقدماتی",
       duration: "۱۴۰۱ - ۱۴۰۲",
     },
     {
-      institution: "یادگیری پیشرفته کتابخانه React برای ساخت پروژه‌های پویا",
+      institution: "یادگیری پیشرفته React برای ساخت پروژه‌های تعاملی",
       degree: "React پیشرفته",
       duration: "۱۴۰۰ - ۱۴۰۱",
+    },
+    {
+      institution: "آموزش کامل توسعه بک‌اند با Node.js، Express و MongoDB",
+      degree: "توسعه بک‌اند",
+      duration: "۱۴۰۲ - ۱۴۰۳",
     },
   ],
 };
@@ -74,7 +93,7 @@ const education = {
 const skill = {
   title: "مهارت‌ها",
   description:
-    "مهارت‌های برنامه‌نویسی من که هر روز برای بهبود آن‌ها تلاش می‌کنم",
+    "مجموعه‌ای از مهارت‌های برنامه‌نویسی و تکنولوژی‌های وب که در آن‌ها تخصص دارم و هر روز در تلاش برای بهبود و گسترش آن‌ها هستم",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -103,6 +122,26 @@ const skill = {
     {
       icon: <SiTailwindcss />,
       name: "Tailwind CSS",
+    },
+    {
+      icon: <FaNodeJs />,
+      name: "Node.js",
+    },
+    {
+      icon: <SiExpress />,
+      name: "Express",
+    },
+    {
+      icon: <SiMongodb />,
+      name: "MongoDB",
+    },
+    {
+      icon: <SiGit />,
+      name: "Git",
+    },
+    {
+      icon: <FaWordpress />,
+      name: "WordPress",
     },
   ],
 };
@@ -164,7 +203,7 @@ function Resume() {
                   {skill.description}
                 </p>
               </div>
-              <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 lg:gap-[40px]">
+              <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 lg:gap-[40px] mb-10">
                 {skill.skillList.map((item, index) => (
                   <li key={index}>
                     <TooltipProvider delayDuration={100}>

@@ -4,22 +4,23 @@ import CountUp from "react-countup";
 
 const stat = [
   {
-    num: 5,
-    text: "تسلط بر ابزارهای کاربردی دنیای وب",
-  },
-  {
-    num: 2,
-    text: "سال‌ها تجربه با طعم پیشرفت",
+    num: 10,
+    text: "ابزارهای کاربردی وب",
   },
   {
     num: 4,
-    text: "پروژه‌های خاص و به‌یادماندنی",
+    text: "سال تجربه",
+  },
+  {
+    num: 22,
+    text: "پروژه موفق",
   },
   {
     num: 500,
-    text: "ساعت‌ها کدنویسی و یادگیری",
+    text: "ساعت کدنویسی",
   },
 ];
+
 
 function Stats() {
   return (
@@ -38,7 +39,7 @@ function Stats() {
                   delay={2}
                   className="text-3xl lg:text-4xl font-extrabold text-accent"
                 />
-                <p className="text-[17px] lg:text-[14px] capitalize lg:max-w-none text-white/80">
+                <p className="text-[17px] lg:text-lg capitalize lg:max-w-none text-white/80">
                   {item.text}
                 </p>
               </div>
