@@ -30,7 +30,10 @@ export const metadata = {
     title: "امیرحسین ورمانلی | توسعه‌دهنده فرانت‌اند",
     description:
       "من امیرحسین ورمانلی، متخصص در توسعه رابط‌های کاربری خلاقانه و مدرن با استفاده از React، Next.js و Tailwind.",
-    creator: "@your-twitter-handle", // اگر حساب توییتر دارید، جایگزین کنید
+    creator: "@your-twitter-handle",
+  },
+  icons: {
+    icon: "/favicon.ico", 
   },
   other: {
     "google-site-verification": "google76f6da39e0e22527",
