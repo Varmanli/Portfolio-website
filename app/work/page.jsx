@@ -30,12 +30,12 @@ const projects = [
     description:
       "سایت استریم و پخش آنلاین موسیقی با قابلیت مدیریت بک‌اند و دیتابیس",
     stack: [
-      { icon: <FaReact />, name: "ری‌اکت" },
-      { icon: <SiTailwindcss />, name: "تیلویند" },
-      { icon: <FaJs />, name: "جاوااسکریپت" },
-      { icon: <FaNodeJs />, name: "نود جی‌اس" },
-      { icon: <SiExpress />, name: "اکسپرس" },
-      { icon: <SiMongodb />, name: "مونگو دی‌بی" },
+      { icon: <FaReact style={{ color: "#61DBFB" }} />, name: "ری‌اکت" },
+      { icon: <SiTailwindcss style={{ color: "#38BDF8" }} />, name: "تیلویند" },
+      { icon: <FaJs style={{ color: "#F7DF1E" }} />, name: "جاوااسکریپت" },
+      { icon: <FaNodeJs style={{ color: "#68A063" }} />, name: "نود جی‌اس" },
+      { icon: <SiExpress style={{ color: "#000" }} />, name: "اکسپرس" },
+      { icon: <SiMongodb style={{ color: "#4DB33D" }} />, name: "مونگو دی‌بی" },
     ],
     image: "/assets/work/musicpich.png",
     live: "https://music.varmanli.ir",
@@ -48,12 +48,12 @@ const projects = [
     description:
       "وبسایت مدیریت و نمایش بلاگ با قابلیت دسته‌بندی، نظرات کاربران و پنل مدیریت",
     stack: [
-      { icon: <SiNextdotjs />, name: "نکست‌جی‌اس" },
-      { icon: <FaReact />, name: "ری‌اکت" },
-      { icon: <SiTailwindcss />, name: "تیلویند" },
-      { icon: <FaNodeJs />, name: "نود جی‌اس" },
-      { icon: <SiExpress />, name: "اکسپرس" },
-      { icon: <SiMongodb />, name: "مونگو دی‌بی" },
+      { icon: <SiNextdotjs style={{ color: "#000" }} />, name: "نکست‌جی‌اس" },
+      { icon: <FaReact style={{ color: "#61DBFB" }} />, name: "ری‌اکت" },
+      { icon: <SiTailwindcss style={{ color: "#38BDF8" }} />, name: "تیلویند" },
+      { icon: <FaNodeJs style={{ color: "#68A063" }} />, name: "نود جی‌اس" },
+      { icon: <SiExpress style={{ color: "#000" }} />, name: "اکسپرس" },
+      { icon: <SiMongodb style={{ color: "#4DB33D" }} />, name: "مونگو دی‌بی" },
     ],
     image: "/assets/work/blog.png",
     live: "https://blog.varmanli.ir",
@@ -65,9 +65,9 @@ const projects = [
     title: "فروشگاه آنلاین",
     description: "وبسایت فروشگاهی با قابلیت سبد خرید",
     stack: [
-      { icon: <FaReact />, name: "ری‌اکت" },
-      { icon: <SiTailwindcss />, name: "تیلویند" },
-      { icon: <FaJs />, name: "جاوااسکریپت" },
+      { icon: <FaReact style={{ color: "#61DBFB" }} />, name: "ری‌اکت" },
+      { icon: <SiTailwindcss style={{ color: "#38BDF8" }} />, name: "تیلویند" },
+      { icon: <FaJs style={{ color: "#F7DF1E" }} />, name: "جاوااسکریپت" },
     ],
     image: "/assets/work/ReactShop.png",
     live: "https://react-shop-murex-zeta.vercel.app/",
@@ -79,9 +79,9 @@ const projects = [
     title: "لیست فیلم",
     description: "سایت جستجوی فیلم و سریال با امکان افزودن به لیست تماشا",
     stack: [
-      { icon: <SiNextdotjs />, name: "نکست‌جی‌اس" },
-      { icon: <SiTailwindcss />, name: "تیلویند" },
-      { icon: <FaJs />, name: "تایپ‌اسکریپت" },
+      { icon: <SiNextdotjs style={{ color: "#000" }} />, name: "نکست‌جی‌اس" },
+      { icon: <SiTailwindcss style={{ color: "#38BDF8" }} />, name: "تیلویند" },
+      { icon: <FaJs style={{ color: "#F7DF1E" }} />, name: "تایپ‌اسکریپت" },
     ],
     image: "/assets/work/watchlist.png",
     live: "https://movie-watchlist-eosin.vercel.app/",
@@ -93,9 +93,9 @@ const projects = [
     title: "اپلیکیشن هواشناسی",
     description: "برنامه‌ای برای نمایش وضعیت آب و هوا با استفاده از API",
     stack: [
-      { icon: <FaReact />, name: "ری‌اکت" },
-      { icon: <FaCss3 />, name: "CSS" },
-      { icon: <FaJs />, name: "جاوااسکریپت" },
+      { icon: <FaReact style={{ color: "#61DBFB" }} />, name: "ری‌اکت" },
+      { icon: <FaCss3 style={{ color: "#264DE4" }} />, name: "CSS" },
+      { icon: <FaJs style={{ color: "#F7DF1E" }} />, name: "جاوااسکریپت" },
     ],
     image: "/assets/work/weather.png",
     live: "https://movie-watchlist-eosin.vercel.app/",
@@ -107,9 +107,9 @@ const projects = [
     title: "لندینگ پیج",
     description: "لندینگ پیج مناسبتی برای جشن یلدا",
     stack: [
-      { icon: <FaHtml5 />, name: "HTML" },
-      { icon: <FaCss3 />, name: "CSS" },
-      { icon: <FaJs />, name: "جاوااسکریپت" },
+      { icon: <FaHtml5 style={{ color: "#E34C26" }} />, name: "HTML" },
+      { icon: <FaCss3 style={{ color: "#264DE4" }} />, name: "CSS" },
+      { icon: <FaJs style={{ color: "#F7DF1E" }} />, name: "جاوااسکریپت" },
     ],
     image: "/assets/work/yalda.png",
     live: "https://varmanli.github.io/landing-page-yalda/",
@@ -121,9 +121,9 @@ const projects = [
     title: "داشبورد مدیریت",
     description: "پنل مدیریت با قابلیت‌های متنوع برای نظارت و کنترل",
     stack: [
-      { icon: <FaReact />, name: "ری‌اکت" },
-      { icon: <SiTailwindcss />, name: "تیلویند" },
-      { icon: <FaJs />, name: "جاوااسکریپت" },
+      { icon: <FaReact style={{ color: "#61DBFB" }} />, name: "ری‌اکت" },
+      { icon: <SiTailwindcss style={{ color: "#38BDF8" }} />, name: "تیلویند" },
+      { icon: <FaJs style={{ color: "#F7DF1E" }} />, name: "جاوااسکریپت" },
     ],
     image: "/assets/work/dashboard.png",
     live: "https://dashbord-weld.vercel.app/",
@@ -171,7 +171,7 @@ function Work() {
                 {project.stack.map((item, index) => (
                   <TooltipProvider key={index} delayDuration={100}>
                     <Tooltip>
-                      <TooltipTrigger className="text-accent text-4xl hover:scale-110 transition-transform duration-300">
+                      <TooltipTrigger className="text-4xl hover:scale-110 transition-transform duration-300">
                         {item.icon}
                       </TooltipTrigger>
                       <TooltipContent>
