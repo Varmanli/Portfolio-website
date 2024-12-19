@@ -15,95 +15,111 @@ import {
 } from "../../components/ui/select";
 
 import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
-import { motion } from "framer-motion";
 
 const info = [
   {
     icon: <FaPhoneAlt />,
-    title: "phone",
-    description: "(+98)09016828270",
+    title: "تلفن",
+    description: "۰۹۰۱۶۸۲۸۲۷۰",
   },
   {
     icon: <FaEnvelope />,
-    title: "email",
+    title: "ایمیل",
     description: "varmanliamirhosein@gmail.com",
   },
   {
     icon: <FaMapMarkedAlt />,
-    title: "address",
-    description: "iran karaj",
+    title: "آدرس",
+    description: "ایران، کرج",
   },
 ];
 
 function Contact() {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{
-        opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
-      }}
-      className="py-6"
-    >
-      <div className="container mx-auto lg:w-[1130px] lg:mx-[100px]">
-        <div className="flex flex-col justify-between lg:flex-row ">
-          <div className=" order-2 lg:order-none ">
-            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
-              <h3 className="text-2xl text-accent">Lets work rogether</h3>
-              <p className="text-white/60 text-[15px]">
-                You can contact me for cooperation
+    <div className="mb-10 flex items-center justify-center">
+      <div className="container mx-auto max-w-4xl bg-[#27272c] rounded-xl p-8">
+        <div className="flex flex-col lg:flex-row gap-10">
+          {/* فرم */}
+          <div className="flex-1 order-2 lg:order-1">
+            <form className="flex flex-col gap-6">
+              <h3 className="text-3xl text-accent font-bold text-center lg:text-right">
+                بیایید با هم همکاری کنیم
+              </h3>
+              <p className="text-white/60 text-center lg:text-right">
+                برای شروع همکاری فرم زیر را پر کنید
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="Firstname" />
-                <Input type="lastname" placeholder="Lastname" />
-                <Input type="email" placeholder="Email address" />
-                <Input type="phone" placeholder="Phone number" />
+                <Input
+                  type="text"
+                  placeholder="نام"
+                  className="h-[50px] text-lg text-right"
+                />
+                <Input
+                  type="text"
+                  placeholder="نام خانوادگی"
+                  className="h-[50px] text-lg text-right"
+                />
+                <Input
+                  type="email"
+                  placeholder="آدرس ایمیل"
+                  className="h-[50px] text-lg text-right"
+                />
+                <Input
+                  type="tel"
+                  placeholder="شماره تماس"
+                  className="h-[50px] text-lg text-right"
+                />
               </div>
               <Select>
-                <SelectTrigger className="w-full">
-                  <SelectValue placeholder="Select a service"></SelectValue>
+                <SelectTrigger className="w-full h-[50px] text-lg text-right">
+                  <SelectValue placeholder="انتخاب نوع پروژه" />
                 </SelectTrigger>
-                <SelectContent>
+                <SelectContent className="text-right">
                   <SelectGroup>
-                    <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="est">HTML CSS JS project</SelectItem>
-                    <SelectItem value="cst">React project</SelectItem>
-                    <SelectItem value="mst">Nextjs project</SelectItem>
+                    <SelectLabel>نوع پروژه</SelectLabel>
+                    <SelectItem value="html">پروژه HTML CSS JS</SelectItem>
+                    <SelectItem value="react">پروژه React</SelectItem>
+                    <SelectItem value="nextjs">پروژه Next.js</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
               <Textarea
-                className="h-[100px]"
-                placeholder="Type your message here"
+                className="h-[150px] text-lg text-right"
+                placeholder="پیام خود را اینجا بنویسید"
               />
-              <Button className="max-w-40" size="md">
-                Send message
+              <Button
+                className="h-[50px] text-lg bg-accent hover:bg-accent/80 transition-all duration-300"
+                size="lg"
+              >
+                ارسال پیام
               </Button>
             </form>
           </div>
-          <div className="flex-1 w-[35%] flex items-center lg:justify-end order-1 lg:order-none mb-8 lg:mb-0">
-            <ul className="flex flex-col gap-10">
-              {info.map((item, index) => {
-                return (
-                  <li
-                    key={index}
-                    className="flex items-center justify-center gap-6"
-                  >
-                    <div className=" flex items-center w-[52px] h-[52px] lg:w-[72px] lg:h-[72px] bg-[#27272c] text-accent rounded-md justify-center">
-                      <div className="text-[26px]">{item.icon}</div>
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-white/60">{item.title}</p>
-                      <h3 className="text-base">{item.description}</h3>
-                    </div>
-                  </li>
-                );
-              })}
+
+          {/* اطلاعات تماس */}
+          <div className="flex-1 order-1 lg:order-2 flex items-center justify-center">
+            <ul className="flex flex-col gap-8">
+              {info.map((item, index) => (
+                <li
+                  key={index}
+                  className="flex items-center gap-6 text-white/80"
+                >
+                  <div className="w-[70px] h-[70px] bg-accent text-white text-2xl rounded-md flex justify-center items-center">
+                    {item.icon}
+                  </div>
+                  <div>
+                    <p className="text-white/60 text-lg">{item.title}</p>
+                    <h3 className="text-xl font-semibold">
+                      {item.description}
+                    </h3>
+                  </div>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 

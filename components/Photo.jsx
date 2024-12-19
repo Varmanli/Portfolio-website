@@ -7,29 +7,9 @@ import Amir from "../public/assets/Amir.png";
 function Photo() {
   return (
     <div className="w-full h-full relative">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{
-          opacity: 1,
-          transition: {
-            delay: 2,
-            duration: 0.4,
-            ease: "easeIn",
-          },
-        }}
-      >
+      <div>
         {/* image */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{
-            opacity: 1,
-            transition: {
-              delay: 2.4,
-              duration: 0.4,
-              ease: "easeInOut",
-            },
-          }}
-        >
+        <div>
           <div className="w-[298px] h-[298px] lg:w-[320px] lg:h-[320px] mix-blend-lighten absolute lg:right-10 ">
             <Image
               src={Amir}
@@ -40,7 +20,7 @@ function Photo() {
               className=" object-contain"
             />
           </div>
-        </motion.div>
+        </div>
         {/* circle */}
         <motion.svg
           className="w-[300px] lg:w-[382px] h-[300px] lg:h-[328px]"
@@ -68,7 +48,7 @@ function Photo() {
             }}
           ></motion.circle>
         </motion.svg>
-      </motion.div>
+      </div>
     </div>
   );
 }

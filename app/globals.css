@@ -48,3 +48,49 @@ body::-webkit-scrollbar-thumb {
     scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
   }
 }
+:root {
+  --f: "YekanBakh", Arial, sans-serif;
+}
+
+/* تعریف فونت‌های YekanBakh */
+@font-face {
+  font-family: "YekanBakh";
+  src: url("/assets/font/woff2/YekanBakh-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "YekanBakh";
+  src: url("/assets/font/woff2/YekanBakh-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "YekanBakh";
+  src: url("/assets/font/woff2/YekanBakh-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "YekanBakh";
+  src: url("/assets/font/woff2/YekanBakh-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "YekanBakh";
+  src: url("/assets/font/woff2/YekanBakh-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "YekanBakh";
+  src: url("/assets/font/woff2/YekanBakh-ExtraBlack.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}

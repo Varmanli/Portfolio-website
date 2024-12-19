@@ -17,31 +17,35 @@ import WorkSliderBtns from "../../components/WorkSliderBtns";
 
 const projects = [
   {
-    num: "01",
-    category: "frontend",
-    title: "Musicpich",
-    Description: "Music streaming website",
-    stack: [{ name: "React" }, { name: "Tailwind" }, { name: "Javascript" }],
+    num: "۰۱",
+    category: "فرانت‌اند",
+    title: "موزیک پیچ",
+    Description: "سایت استریم و پخش آنلاین موسیقی",
+    stack: [{ name: "ری‌اکت" }, { name: "تیلویند" }, { name: "جاوااسکریپت" }],
     image: "/assets/work/Musicpich.png",
     live: "https://musicpich.vercel.app/",
     github: "https://github.com/Varmanli/Musicpich",
   },
   {
-    num: "02",
-    category: "frontend",
-    title: "React Shop",
-    Description: "A store website with a shopping cart",
-    stack: [{ name: "React" }, { name: "Tailwind" }, { name: "Javascript" }],
+    num: "۰۲",
+    category: "فرانت‌اند",
+    title: "فروشگاه آنلاین",
+    Description: "وبسایت فروشگاهی با قابلیت سبد خرید",
+    stack: [{ name: "ری‌اکت" }, { name: "تیلویند" }, { name: "جاوااسکریپت" }],
     image: "/assets/work/ReactShop.png",
     live: "https://react-shop.liara.run/",
     github: "https://github.com/Varmanli/React-Shop",
   },
   {
-    num: "02",
-    category: "frontend",
-    title: "Movie Watchlist",
-    Description: "Movie and series search site and add to watch list",
-    stack: [{ name: "Nextjs" }, { name: "Tailwind" }, { name: "Typescript" }],
+    num: "۰۳",
+    category: "فرانت‌اند",
+    title: "لیست فیلم",
+    Description: "سایت جستجوی فیلم و سریال با امکان افزودن به لیست تماشا",
+    stack: [
+      { name: "نکست‌جی‌اس" },
+      { name: "تیلویند" },
+      { name: "تایپ‌اسکریپت" },
+    ],
     image: "/assets/work/watchlist.png",
     live: "https://movie-watchlist-eosin.vercel.app/",
     github: "https://github.com/Varmanli/Movie-Watchlist",
@@ -55,30 +59,19 @@ function Work() {
     setProject(projects[currentIndex]);
   }
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{
-        opacity: 1,
-        transition: {
-          delay: 2.4,
-          duration: 0.4,
-          ease: "easeIn",
-        },
-      }}
-      className="min-h-[80vh] flex flex-col justify-center py-12 lg:px-0"
-    >
-      <div className="container mx-auto max-w-[1050px] lg:mx-[100px]">
-        <div className="flex flex-col lg:flex-row lg:gap-[30px]">
-          <div className="w-full lg:w-[50%]  flex flex-col lg:justify-between order-2 lg:order-none">
-            <div className="flex flex-col gap-[13px] ">
+    <div className="min-h-screen flex flex-col justify-center items-center lg:px-0">
+      <div className="container mx-auto max-w-[1050px]">
+        <div className="flex flex-col lg:flex-row gap-[30px] items-center">
+          <div className="w-full lg:w-[50%] flex flex-col justify-between text-center lg:text-right">
+            <div className="flex flex-col gap-6">
               <div className="text-7xl leading-none font-extrabold text-transparent text-outline">
                 <h1>{project.num}</h1>
               </div>
-              <h2 className="text-[42px] font-bold leading-none text-white hover:text-accent transition-all duration-500 capitalize">
-                {project.title} Project
+              <h2 className="text-[42px] font-bold leading-none text-white hover:text-accent transition-all duration-500">
+                پروژه {project.title}
               </h2>
               <p className="text-white/60">{project.Description}</p>
-              <ul className="flex gap-4">
+              <ul className="flex gap-4 justify-center lg:justify-start">
                 {project.stack.map((item, index) => {
                   return (
                     <li key={index} className="text-xl text-accent">
@@ -88,8 +81,8 @@ function Work() {
                   );
                 })}
               </ul>
-              <div className="border border-white/20"></div>
-              <div className="flex items-center gap-4">
+              <div className="border border-white/20 my-4"></div>
+              <div className="flex items-center justify-center lg:justify-start gap-4">
                 <Link href={project.live}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
@@ -97,7 +90,7 @@ function Work() {
                         <BsArrowUpRight className="text-white text-3xl hover:text-accent" />
                       </TooltipTrigger>
                       <TooltipContent>
-                        <p>Live Project</p>
+                        <p>مشاهده پروژه</p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
@@ -109,7 +102,7 @@ function Work() {
                         <BsGithub className="text-white text-3xl hover:text-accent" />
                       </TooltipTrigger>
                       <TooltipContent>
-                        <p>Github repository</p>
+                        <p>مخزن گیت‌هاب</p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
@@ -122,21 +115,18 @@ function Work() {
               spaceBetween={30}
               slidesPerView={1}
               onSlideChange={handleSlideChange}
-              className="lg:h-[100%] mb-12 lg:mb-0 w-[100%]"
+              className="lg:h-[100%] w-[100%]"
             >
               {projects.map((project, index) => {
                 return (
-                  <SwiperSlide key={index} className="w-full ">
-                    <div className="h-[320px] relative flex justify-center items-center bg-pink-50/20">
-                      <div className="relative h-full w-full"></div>
-                      <div>
-                        <Image
-                          src={project.image}
-                          fill
-                          className="object-cover"
-                          alt=""
-                        />
-                      </div>
+                  <SwiperSlide key={index} className="w-full">
+                    <div className="h-[320px] relative flex justify-center items-center bg-gray-800/20 rounded-xl">
+                      <Image
+                        src={project.image}
+                        fill
+                        className="object-cover rounded-xl"
+                        alt={project.title}
+                      />
                     </div>
                   </SwiperSlide>
                 );
@@ -146,7 +136,7 @@ function Work() {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 

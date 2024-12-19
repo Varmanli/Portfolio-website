@@ -8,27 +8,27 @@ import { BsArrowDownRight } from "react-icons/bs";
 const services = [
   {
     num: 1,
-    title: "front end",
+    title: "توسعه فرانت‌اند",
     Description:
-      "Front-end programming with modern technologies such as React Next.js Tailwindcss",
+      "برنامه‌نویسی فرانت‌اند با استفاده از تکنولوژی‌های مدرن مانند React، Next.js و TailwindCSS",
     href: "/",
   },
   {
     num: 2,
-    title: "js project",
-    Description: "Doing JavaScript language projects",
+    title: "پروژه‌های جاوااسکریپت",
+    Description: "پیاده‌سازی پروژه‌های پیچیده و خلاقانه با زبان جاوااسکریپت",
     href: "/",
   },
   {
     num: 3,
-    title: "HTML template",
-    Description: "Creating beautiful and high precision HTML templates",
+    title: "قالب‌های HTML",
+    Description: "طراحی قالب‌های زیبا و دقیق HTML برای وبسایت‌های شما",
     href: "/",
   },
   {
     num: 4,
-    title: "wordpress",
-    Description: "Shopping, news, personal sites...",
+    title: "سایت‌های وردپرس",
+    Description: "ایجاد سایت‌های فروشگاهی، خبری، شخصی و موارد دیگر...",
     href: "/",
   },
 ];
@@ -37,18 +37,7 @@ function Services() {
   return (
     <section className="min-h-[80vh] lg:mx-[100px] flex flex-col justify-center py-12 lg:py-0">
       <div className="container mx-auto">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{
-            opacity: 1,
-            transition: {
-              delay: 2.4,
-              duration: 0.4,
-              ease: "easeIn",
-            },
-          }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-[50px]"
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-[50px]">
           {services.map((item, index) => {
             return (
               <div
@@ -77,7 +66,7 @@ function Services() {
               </div>
             );
           })}
-        </motion.div>
+        </div>
       </div>
     </section>
   );
