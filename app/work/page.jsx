@@ -37,7 +37,7 @@ const projects = [
       { icon: <SiExpress style={{ color: "#000" }} />, name: "اکسپرس" },
       { icon: <SiMongodb style={{ color: "#4DB33D" }} />, name: "مونگو دی‌بی" },
     ],
-    image: "/assets/work/musicpich.png",
+    image: "/assets/work/music.png",
     live: "https://music.varmanli.ir",
     github: "https://github.com/Varmanli/Musicpich",
   },
@@ -98,7 +98,7 @@ const projects = [
       { icon: <FaJs style={{ color: "#F7DF1E" }} />, name: "جاوااسکریپت" },
     ],
     image: "/assets/work/weather.png",
-    live: "https://movie-watchlist-eosin.vercel.app/",
+    live: "https://weather.varmanli.ir",
     github: "https://github.com/Varmanli/Weather-app",
   },
   {
