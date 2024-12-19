@@ -33,10 +33,10 @@ export const metadata = {
     creator: "@your-twitter-handle",
   },
   icons: {
-    icon: "/favicon.ico", 
+    icon: "/favicon.ico",
   },
   other: {
-    "google-site-verification": "google76f6da39e0e22527",
+    "google-site-verification": "google76f6da39e0e22527.html",
   },
 };
 
@@ -46,6 +46,7 @@ export default function RootLayout({ children }) {
       <body style={{ fontFamily: "var(--f)" }}>
         <Header />
         {children}
+        google-site-verification: google76f6da39e0e22527.html
       </body>
     </html>
   );
