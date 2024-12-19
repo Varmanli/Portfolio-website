@@ -97,3 +97,31 @@ body::-webkit-scrollbar-thumb {
   font-weight: 900;
   font-style: normal;
 }
+/* styles.css */
+.toast-container {
+  font-family: "IranSans", sans-serif;
+  direction: rtl;
+}
+
+.toast-success {
+  background-color: #38bdf8 !important; /* رنگ سبز Tailwind */
+  color: white !important;
+  border-radius: 12px !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.toast-error {
+  background-color: #e11d48 !important; /* رنگ قرمز Tailwind */
+  color: white !important;
+  border-radius: 12px !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.toast-body {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.toast-close-button {
+  color: white !important;
+}
