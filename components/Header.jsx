@@ -10,7 +10,7 @@ function Header() {
         {/* لوگو */}
         <Link href="/">
           <h1
-            className="text-3xl font-bold tracking-tight cursor-pointer text-white hover:text-accent transition-all font-primary "
+            className="text-3xl font-bold tracking-tight cursor-pointer text-white hover:text-accent transition-all font-primary  "
           >
             Amir<span className="text-accent">.V</span>
           </h1>
