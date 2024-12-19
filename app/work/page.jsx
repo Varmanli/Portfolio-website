@@ -157,7 +157,7 @@ function Work() {
                 transition={{ duration: 0.6 }}
                 className="text-[42px] font-bold leading-none text-white hover:text-accent transition-all duration-500"
               >
-                پروژه {project.title}
+                {project.title}
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0 }}
