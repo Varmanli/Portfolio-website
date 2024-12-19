@@ -46,27 +46,27 @@ const about = {
 const education = {
   icon: "/assest/resume/cap.svg",
   title: "تحصیلات من",
-  description: "دوره‌ها و تجربه‌های آموزشی که در مسیر خود کسب کرده‌ام",
+  description: "مسیر یادگیری و تجربه‌هایی که مرا به جایگاه امروزی رسانده‌اند:",
   item: [
     {
-      institution: "دانشجوی مهندسی کامپیوتر دانشگاه آزاد کرج",
+      institution: "دانشجوی مهندسی کامپیوتر، دانشگاه آزاد کرج",
       degree: "مهندسی کامپیوتر",
-      duration: "۲۰۲۱ - ۲۰۲۴",
+      duration: "۱۴۰۰ - ۱۴۰۳",
     },
     {
-      institution: "آموزش اصول طراحی با HTML و CSS",
+      institution: "آموزش طراحی حرفه‌ای رابط کاربری با HTML و CSS",
       degree: "طراحی رابط کاربری",
-      duration: "۲۰۲۱ - ۲۰۲۲",
+      duration: "۱۴۰۰ - ۱۴۰۱",
     },
     {
-      institution: "آموزش برنامه‌نویسی جاوااسکریپت",
+      institution: "آموزش اصول برنامه‌نویسی و کدنویسی جاوااسکریپت",
       degree: "جاوااسکریپت مقدماتی",
-      duration: "۲۰۲۲ - ۲۰۲۳",
+      duration: "۱۴۰۱ - ۱۴۰۲",
     },
     {
-      institution: "آموزش حرفه‌ای کتابخانه React",
+      institution: "یادگیری پیشرفته کتابخانه React برای ساخت پروژه‌های پویا",
       degree: "React پیشرفته",
-      duration: "۲۰۲۱ - ۲۰۲۲",
+      duration: "۱۴۰۰ - ۱۴۰۱",
     },
   ],
 };
@@ -132,21 +132,23 @@ function Resume() {
             {/* درباره من */}
             <TabsContent value="about" className="w-full">
               <div className="flex flex-col gap-[30px] text-center items-center justify-center lg:text-right">
-                <h3 className="text-5xl font-bold">{about.title}</h3>
-                <p className="max-w-[700px] text-white/70 text-lg">
+                <h3 className="text-5xl font-extrabold text-accent">
+                  {about.title}
+                </h3>
+                <p className="max-w-[700px] text-white/80 text-lg leading-relaxed">
                   {about.description}
                 </p>
-                <ul className="divide-y divide-white/20 bg-[#1e1e22] rounded-lg shadow-lg">
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-6 bg-[#1e1e22] p-6 rounded-xl shadow-lg">
                   {about.info.map((item, index) => (
                     <li
                       key={index}
-                      className="flex items-center justify-between p-6 gap-10 hover:bg-[#2a2a2f] transition-all duration-300"
+                      className="flex flex-col items-center justify-center bg-[#2a2a2f] rounded-lg p-6 hover:bg-[#333338] transition-all duration-300"
                     >
-                      <span className="text-accent font-semibold text-xl">
-                        {item.fieldValue}
-                      </span>
-                      <span className="text-white/70 text-lg">
+                      <span className="text-white/70 text-lg text-center mt-2">
                         {item.field}
+                      </span>
+                      <span className="text-accent text-xl font-bold text-center">
+                        {item.fieldValue}
                       </span>
                     </li>
                   ))}

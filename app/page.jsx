@@ -11,15 +11,17 @@ function Home() {
         <div className="flex flex-col lg:flex-row items-center justify-between lg:pt-2 lg:pb-10">
           {/* بخش متن */}
           <div className="text-center lg:text-right order-2 lg:order-none">
-            <span className="text-lg lg:text-xl">توسعه‌دهنده فرانت‌اند</span>
+            <span className="text-lg lg:text-xl">برنامه‌نویس وب</span>
             <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-              سلام من <br />
+              سلام، من <br />
               <span className="text-accent">امیرحسین ورمانلی</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80 text-base lg:text-lg leading-relaxed">
-              من در خلق تجربیات دیجیتال زیبا مهارت دارم و در زبان‌ها و
-              فناوری‌های برنامه‌نویسی مختلف تخصص دارم.
+              عاشق طراحی و ساخت وب‌سایت‌های جذاب و کاربردی هستم.
+              <br /> از ایده‌پردازی تا اجرای نهایی، تلاش می‌کنم تجربه‌ای راحت و
+              دوست‌داشتنی برای کاربران بسازم.
             </p>
+
             <div className="flex flex-col lg:flex-row items-center gap-8">
               <Button
                 variant="outline"

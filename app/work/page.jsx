@@ -59,18 +59,35 @@ function Work() {
     setProject(projects[currentIndex]);
   }
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center lg:px-0">
+    <div className="min-h-screen flex flex-col justify-center items-center lg:mt-[-80px]">
       <div className="container mx-auto max-w-[1050px]">
         <div className="flex flex-col lg:flex-row gap-[30px] items-center">
           <div className="w-full lg:w-[50%] flex flex-col justify-between text-center lg:text-right">
             <div className="flex flex-col gap-6">
-              <div className="text-7xl leading-none font-extrabold text-transparent text-outline">
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                className="text-7xl leading-none font-extrabold text-transparent text-outline"
+              >
                 <h1>{project.num}</h1>
-              </div>
-              <h2 className="text-[42px] font-bold leading-none text-white hover:text-accent transition-all duration-500">
+              </motion.div>
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="text-[42px] font-bold leading-none text-white hover:text-accent transition-all duration-500"
+              >
                 پروژه {project.title}
-              </h2>
-              <p className="text-white/60">{project.Description}</p>
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.7 }}
+                className="text-white/70"
+              >
+                {project.Description}
+              </motion.p>
               <ul className="flex gap-4 justify-center lg:justify-start">
                 {project.stack.map((item, index) => {
                   return (
@@ -86,7 +103,7 @@ function Work() {
                 <Link href={project.live}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group shadow-lg hover:shadow-xl transition-all">
                         <BsArrowUpRight className="text-white text-3xl hover:text-accent" />
                       </TooltipTrigger>
                       <TooltipContent>
@@ -98,7 +115,7 @@ function Work() {
                 <Link href={project.github}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group shadow-lg hover:shadow-xl transition-all">
                         <BsGithub className="text-white text-3xl hover:text-accent" />
                       </TooltipTrigger>
                       <TooltipContent>
@@ -120,14 +137,19 @@ function Work() {
               {projects.map((project, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="h-[320px] relative flex justify-center items-center bg-gray-800/20 rounded-xl">
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 0.5 }}
+                      className="h-[320px] relative flex justify-center items-center bg-gray-800/20 rounded-xl shadow-lg hover:shadow-xl transition-all"
+                    >
                       <Image
                         src={project.image}
                         fill
                         className="object-cover rounded-xl"
                         alt={project.title}
                       />
-                    </div>
+                    </motion.div>
                   </SwiperSlide>
                 );
               })}
