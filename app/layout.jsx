@@ -43,10 +43,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fa" dir="rtl">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="TThIB43bX-D9bOgzEsrmtPKSxDJ2fXayV6h2CE1IsVo"
+        />
+      </head>
       <body style={{ fontFamily: "var(--f)" }}>
         <Header />
         {children}
-        google-site-verification: google76f6da39e0e22527.html
       </body>
     </html>
   );
