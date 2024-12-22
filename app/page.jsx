@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 import Social from "../components/Social";
 import Photo from "../components/Photo";
@@ -23,14 +22,15 @@ function Home() {
             </p>
 
             <div className="flex flex-col lg:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="lg"
-                className="uppercase flex items-center gap-2"
+              <a
+                href="https://www.dropbox.com/scl/fi/ebobgfbvgmloey8422wdl/AmirhoseinVarmanli.pdf?rlkey=wapruocqvxy8o1u5ytgb5imyu&st=gbk6amln&dl=1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="uppercase flex items-center gap-2 px-5 py-2 rounded-xl text-primary bg-accent transition-all duration-300"
               >
                 <span>دانلود رزومه</span>
                 <FiDownload className="text-xl" />
-              </Button>
+              </a>
               <div className="mb-8 lg:mb-0">
                 <Social
                   containerStyle="flex gap-6"
