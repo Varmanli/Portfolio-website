@@ -6,18 +6,18 @@ import Amir from "../public/assets/Amir.png";
 
 function Photo() {
   return (
-    <div className="w-full h-full relative">
+    <div className="w-full h-full relative overflow-hidden">
       <div>
         {/* image */}
         <div>
-          <div className="w-[500px] h-[320px]  lg:h-[360px] mix-blend-lighten absolute right-[-35%] lg:right-[-16.5%] ">
+          <div className="w-[500px] h-[320px] overflow-hidden  lg:h-[360px] mix-blend-lighten absolute right-[-35%] lg:right-[-16.5%] ">
             <Image
               src={Amir}
               priority
               quality={100}
               fill
               alt="amirhosein"
-              className=" object-contain"
+              className=" object-contain overflow-hidden"
             />
           </div>
         </div>
