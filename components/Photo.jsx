@@ -10,7 +10,7 @@ function Photo() {
       <div>
         {/* image */}
         <div>
-          <div className="w-[298px] h-[298px] lg:w-[500px] lg:h-[360px] mix-blend-lighten absolute right-[-16.5%] ">
+          <div className="w-[500px] h-[320px]  lg:h-[360px] mix-blend-lighten absolute right-[-35%] lg:right-[-16.5%] ">
             <Image
               src={Amir}
               priority
