@@ -1,4 +1,5 @@
 "use client";
+"use client";
 
 import { useState } from "react";
 import Image from "next/image";
@@ -13,13 +14,22 @@ import {
 } from "../../components/ui/tooltip";
 import { motion } from "framer-motion";
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
-import { FaReact, FaNodeJs, FaHtml5, FaCss3, FaJs } from "react-icons/fa";
 import {
+  FaReact,
+  FaNodeJs,
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaWordpress,
+} from "react-icons/fa";
+import {
+  SiNestjs,
   SiTailwindcss,
   SiExpress,
   SiMongodb,
   SiNextdotjs,
 } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
 import WorkSliderBtns from "../../components/WorkSliderBtns";
 
 const projects = [
@@ -44,20 +54,23 @@ const projects = [
   {
     num: "۰۲",
     category: "فول‌استک",
-    title: "پروژه بلاگ",
+    title: "وب‌سایت ملیکا شمیرانی",
     description:
-      "وبسایت مدیریت و نمایش بلاگ با قابلیت دسته‌بندی، نظرات کاربران و پنل مدیریت",
+      "در این پروژه مسئولیت کامل فرانت‌اند و بک‌اند را بر عهده داشتم. طراحی رابط کاربری مدرن همراه با یک داشبورد مدیریتی قدرتمند، امکان مدیریت آسان بخش‌های مختلف سایت و تجربه کاربری روان را فراهم می‌کند.",
     stack: [
       { icon: <SiNextdotjs style={{ color: "#000" }} />, name: "نکست‌جی‌اس" },
       { icon: <FaReact style={{ color: "#61DBFB" }} />, name: "ری‌اکت" },
       { icon: <SiTailwindcss style={{ color: "#38BDF8" }} />, name: "تیلویند" },
       { icon: <FaNodeJs style={{ color: "#68A063" }} />, name: "نود جی‌اس" },
-      { icon: <SiExpress style={{ color: "#000" }} />, name: "اکسپرس" },
-      { icon: <SiMongodb style={{ color: "#4DB33D" }} />, name: "مونگو دی‌بی" },
+      { icon: <SiNestjs style={{ color: "#ED0054" }} />, name: "نست جی اس" },
+      {
+        icon: <BiLogoPostgresql style={{ color: "#0064a5" }} />,
+        name: "پستگرس‌کیوال",
+      },
     ],
-    image: "/assets/work/blog.png",
-    live: "https://blog.varmanli.ir",
-    github: "https://github.com/Varmanli/Blog-Project",
+    image: "/assets/work/shemirani.png",
+    live: "https://melikashemirani.ir",
+    github: "https://github.com/Varmanli/portfolio-site",
   },
   {
     num: "۰۳",
@@ -118,16 +131,58 @@ const projects = [
   {
     num: "۰۷",
     category: "فرانت‌اند",
-    title: "داشبورد مدیریت",
-    description: "پنل مدیریت با قابلیت‌های متنوع برای نظارت و کنترل",
+    title: "وب‌سایت Archi Studio",
+    description:
+      "در این پروژه، مسئولیت کامل طراحی و توسعهٔ فرانت‌اند و بک‌اند را بر عهده داشتم. این وب‌سایت شامل یک رابط کاربری مینیمال و مدرن همراه با داشبورد مدیریتی قدرتمند برای مدیریت پروژه‌ها و محتواست.",
     stack: [
-      { icon: <FaReact style={{ color: "#61DBFB" }} />, name: "ری‌اکت" },
+      {
+        icon: <SiNextdotjs style={{ color: "#000" }} />,
+        name: "نکست جی اس",
+      },
       { icon: <SiTailwindcss style={{ color: "#38BDF8" }} />, name: "تیلویند" },
       { icon: <FaJs style={{ color: "#F7DF1E" }} />, name: "جاوااسکریپت" },
     ],
-    image: "/assets/work/dashboard.png",
-    live: "https://dashbord-weld.vercel.app/",
-    github: "https://github.com/Varmanli/Dashbord",
+    image: "/assets/work/architecture.png",
+    live: "https://architecture-firm.varmanli.ir",
+    github: "https://github.com/Varmanli/Architecture-Firm-Portfolio",
+  },
+  {
+    num: "۰۸",
+    category: "وردپرس",
+    title: "وب‌سایت مرکزی کالا",
+    description:
+      "طراحی و توسعه وب‌سایت فروش لوازم خانگی با قالب اختصاصی و پیاده‌سازی روی وردپرس. رابط کاربری ساده و کاربرپسند برای معرفی و فروش محصولات.",
+    stack: [
+      { icon: <FaHtml5 style={{ color: "#E34C26" }} />, name: "HTML" },
+      { icon: <FaCss3 style={{ color: "#264DE4" }} />, name: "CSS" },
+      { icon: <FaJs style={{ color: "#F7DF1E" }} />, name: "جاوااسکریپت" },
+      {
+        icon: <FaWordpress style={{ color: "#0457A0" }} />,
+        name: "وردپرس",
+      },
+    ],
+    image: "/assets/work/markazikala.png",
+    live: "https://markazikalaa.ir/",
+    github: "",
+  },
+  {
+    num: "۰۹",
+    category: "وردپرس",
+    title: "وب‌سایت پاسارگاد پلیمر",
+    description:
+      "طراحی و پیاده‌سازی وب‌سایت شرکتی چهارزبانه با قالب اختصاصی روی وردپرس. امکان مدیریت آسان محتوا و پشتیبانی از چند زبان برای دسترسی گسترده‌تر.",
+    stack: [
+      { icon: <FaHtml5 style={{ color: "#E34C26" }} />, name: "HTML" },
+      { icon: <FaCss3 style={{ color: "#264DE4" }} />, name: "CSS" },
+      { icon: <FaJs style={{ color: "#F7DF1E" }} />, name: "جاوااسکریپت" },
+      {
+        icon: <FaWordpress style={{ color: "#0457A0" }} />,
+        name: "وردپرس",
+      },
+    ],
+    image: "/assets/work/pasargad.png",
+    live: "https://pasargadpolymer.com/?lang=fa",
+    github: "",
   },
 ];
 
